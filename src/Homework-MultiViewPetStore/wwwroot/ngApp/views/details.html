@@ -1,1 +1,25 @@
 ﻿
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img ng-src="/images/{{c.pet.img}}" class="img-rounded infoImg" />
+            <div class="buttonContainer">
+                <button class="btn btn-lg btn-primary disabled">Adopt {{c.pet.name}} Today!</button>
+            </div>
+            <div class="text-center"><a href="/">< Back to all pets list</a></div>
+        </div>
+        <div class="col-md-6">
+            <h1>{{c.pet.name}}'s Page</h1>
+            <ul>
+                <li><strong>Name:</strong> {{c.pet.name}}</li>
+                <li><strong>Age:</strong> {{c.pet.age}} Years Old</li>
+                <li><strong>Price:</strong> {{c.pet.price | currency}}</li>
+            </ul>
+            <h2>More information about {{c.pet.name}}</h2>
+            <div class="petDescription co-md-12">
+                {{c.pet.description}}
+            </div>
+        </div>
+    </div>
+</div>
